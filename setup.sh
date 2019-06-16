@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# utils
+sudo apt-get install -y curl git nano
+
 # Install Docker
 curl -sSL get.docker.com | sh && \
   sudo usermod pi -aG docker
