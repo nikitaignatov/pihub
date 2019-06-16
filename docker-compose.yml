@@ -2,6 +2,23 @@ version: '2'
 volumes:
     node-red-data:
 services:
+  influxdb:
+    build: influxdb
+    container_name: influxdb
+    privileged: true
+    volumes:
+        - mnt/usb:/mnt/usb
+    ports:
+      - "8086:8086" 
+      - "8089:8089"
+    restart: always
+  grafana:
+    build: grafana
+    ports:
+       - "3000:3000"
+    depends_on:
+       - influxdb
+    restart: always
   mqtt:
     image: panuwitp/mosquitto-arm
     ports:
