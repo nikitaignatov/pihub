@@ -1,0 +1,17 @@
+version: '2'
+volumes:
+    node-red-data:
+services:
+  mqtt:
+    image: panuwitp/mosquitto-arm
+    ports:
+      - "1883:1883"
+  node-red:
+    build: node-red
+    volumes:
+       - 'node-red-data:/data'
+    ports:
+       - "1880:1880"
+    depends_on:
+        - mqtt
+    restart: always
