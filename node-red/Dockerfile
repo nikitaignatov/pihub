@@ -18,11 +18,14 @@ RUN npm install node-red-contrib-influxdb
 #RUN npm install node-red-contrib-todoist
 RUN npm install node-red-contrib-google
 RUN npm install node-red-contrib-slack
-RUN npm install node-red-node-openweathermap
+#RUN npm install node-red-node-openweathermap
+#RUN npm install node-red-contrib-discord
 
 # utils
 
-RUN npm install node-red-contrib-bigtimer
+#RUN npm install node-red-contrib-bigtimer
+#RUN npm install node-red-contrib-zip
+#RUN npm install node-red-contrib-http-logger
 RUN npm install node-red-contrib-mqtt-json
 RUN npm install node-red-contrib-aggregator
 RUN npm install node-red-contrib-moment
