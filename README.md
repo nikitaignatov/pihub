@@ -1,6 +1,6 @@
 # hub
 
-Docker on Raspberry Pi: [https://github.com/gcgarner/IOTstack](https://github.com/gcgarner/IOTstack)
+[This repo is depricated] Instead check out: [Docker on Raspberry Pi](https://github.com/gcgarner/IOTstack) by [@gcgarner](https://github.com/gcgarner)
 
 Refrences:
 
